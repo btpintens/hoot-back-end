@@ -38,3 +38,4 @@ const hootSchema = new mongoose.Schema(
   // models/hoot.js
 
 export default mongoose.model('Hoot', hootSchema);
+
