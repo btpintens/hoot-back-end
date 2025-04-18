@@ -1,16 +1,16 @@
 // npm
-const dotenv = require('dotenv');
+import dotenv from 'dotenv';
 dotenv.config();
-const express = require('express');
+import express from 'express';
 const app = express();
-const mongoose = require('mongoose');
-const cors = require('cors');
-const logger = require('morgan');
+import mongoose from 'mongoose';
+import cors from 'cors';
+import logger from 'morgan';
 
 // Import routers
-const authRouter = require('./controllers/auth');
-const testJwtRouter = require('./controllers/test-jwt');
-const usersRouter = require('./controllers/users');
+import authRouter from './controllers/auth.js';
+import testJwtRouter from './controllers/test-jwt.js';
+import usersRouter from './controllers/users.js';
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI);

@@ -1,6 +1,6 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const jwt = require('jsonwebtoken');
+import jwt from 'jsonwebtoken';
 
 router.get('/sign-token', (req, res) => {
   const user = {
@@ -25,4 +25,4 @@ router.post('/verify-token', (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
