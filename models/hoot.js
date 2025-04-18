@@ -37,4 +37,4 @@ const hootSchema = new mongoose.Schema(
   
   // models/hoot.js
 
-module.exports = mongoose.model('Hoot', hootSchema);
+export default mongoose.model('Hoot', hootSchema);
