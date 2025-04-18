@@ -1,4 +1,4 @@
-# Express JWT Auth Template
+# hoot-back-end# hoot-back-end
 
 ## About
 
@@ -28,3 +28,4 @@ Start the app in your terminal with:
 ``` sh
 npm run dev
 ```
+
